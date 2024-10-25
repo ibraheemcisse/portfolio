@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Existing CSS file -->
+    <link rel="stylesheet" href="css/consultation.css"> <!-- New CSS file -->
+</head>
+<body>
+
+    <header>
+        <h1>Get a Consultation</h1>
+        <p>Let's start your journey towards success!</p>
+    </header>
+
+    <main>
+        <section class="consultation-form">
+            <h2>Book a Consultation</h2>
+            <form action="/submit-consultation" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Interested In</label>
+                    <select id="service" name="service" required>
+                        <option value="ai-art">AI Art</option>
+                        <option value="brand-strategy">Brand Strategy</option>
+                        <option value="web-design">Web Design</option>
+                        <option value="product-design">Product Design</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </section>
+
+        <aside class="contact-info">
+            <h2>Contact Information</h2>
+            <p>If you have any questions, feel free to reach out to us:</p>
+            <ul class="list-unstyled">
+                <li><strong>Email:</strong> info@yourbrand.com</li>
+                <li><strong>Phone:</strong> +123 456 7890</li>
+                <li><strong>Address:</strong> 123 Your Street, Your City, Your Country</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <hr>
+        <small>&copy; 2024 Your Brand. All rights reserved.</small>
+    </footer>
+
+</body>
+</html>
